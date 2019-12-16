@@ -1,0 +1,51 @@
+version: "3"
+
+services:
+  #  The Application
+  php:
+    build:
+      context: ./
+      dockerfile: dockerfile/php/7.2/Dockerfile
+    restart: always
+    env_file:
+      - ./.env
+    volumes:
+      - ./php:/src
+  # The Database
+  db:
+    image: mysql
+    restart: always
+    volumes:
+      - ./db/data:/var/lib/mysql
+      - ./db/conf.d/my.cnf:/etc/mysql/my.cnf
+      - ./db/dump:/dump
+    environment:
+      - TZ=${TZ}
+      - MYSQL_DATABASE=${DB_DATABASE}
+      - MYSQL_USER=${DB_USERNAME}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+    # security_opt:
+    #   - seccomp:unconfined
+  # The Web Server
+  web:
+    image: nginx
+    ports:
+        - "8084:80"
+        - "4431:443"
+    depends_on:
+      - php
+      - db
+    volumes:
+        - ./php:/src
+        - ./web/ssl:/etc/nginx/letsencrypt
+        - ./web/conf.d:/etc/nginx/conf.d
+        - ./web/log:/var/log/nginx
+    environment:
+      TZ: ${TZ}
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports: 
+      - "8085:80"
+    links:
+      - db

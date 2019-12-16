@@ -1,0 +1,14 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/vendor/ckeditor/ckeditor/ckeditor.js": "/vendor/ckeditor/ckeditor/ckeditor.js",
+    "/vendor/ckeditor/ckeditor/config.js": "/vendor/ckeditor/ckeditor/config.js",
+    "/vendor/ckeditor/ckeditor/styles.js": "/vendor/ckeditor/ckeditor/styles.js",
+    "/vendor/ckeditor/ckeditor/contents.css": "/vendor/ckeditor/ckeditor/contents.css",
+    "/css/bootstrap.min.css": "/css/bootstrap.min.css",
+    "/css/bootstrap.min.css.map": "/css/bootstrap.min.css.map",
+    "/css/bootstrap-theme.min.css": "/css/bootstrap-theme.min.css",
+    "/css/bootstrap-theme.min.css.map": "/css/bootstrap-theme.min.css.map",
+    "/css/menu-styles.css": "/css/menu-styles.css",
+    "/css/quelea-onlineshop.css": "/css/quelea-onlineshop.css"
+}

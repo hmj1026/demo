@@ -1,0 +1,774 @@
+/* CSS Document */
+/*navbar*/
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+body {
+  font-family: 'Noto Sans TC', sans-serif !important;
+  
+}
+*
+{ margin: 0 ;
+  padding: 0 ;
+}
+.topImgBanner-1024{
+    display: none;
+  }
+.indBestPro-bike{
+	background: url(../images/indBestPro-bike-bg.png) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.indBestPro-trea{
+	background: url(../images/indBestPro-trea-bg.png) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.big-sale{
+	color: #E80000;
+	font-size: 32px;
+	font-weight: 600;
+}
+.throughWord{
+	text-decoration: line-through;
+	font-size: 13px !important;
+	color: #620404;
+	}
+.halfTheDiv >.throughWord{
+	background: rgba(255, 255, 255 , 0.5);
+	display: inline-block;
+}
+.yellowButton{
+	padding: 10px 30px;
+	color: #000;
+	background:#FFDA00;
+	text-decoration: none;
+	display: inline-block;
+	border-radius:5px; 
+}
+.yellowButton:hover{
+	color: #000;
+	text-decoration: none;
+	background: rgba(255, 218, 0 , 0.8);
+}
+.yellowButton p{
+	margin-bottom: 0px;
+}
+.indBestPro-trea .container div h3 , .indBestPro-bike .container div h3{
+	margin-left: 0px;
+}
+.indBestPro-trea .container div p , .indBestPro-bike .container div p{
+	font-size: 16px;
+	list-style: 26px;
+}
+.halfTheDiv{
+	display: inline-block;
+	vertical-align: bottom;
+	margin-right:20px;
+}
+.indBestPro-trea .container,.indBestPro-bike .container{
+	position: relative;
+}
+.indBestContentRight{
+	position: absolute;
+	top:20%;
+	left: 50%;
+}
+.indBestContentLeft{
+	position: absolute;
+	top:20%;
+	left: 0%;
+}
+.accessoriesRecommend{
+	display: box;              /* OLD - Android 4.4- */
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	margin-top: 60px;
+}
+.accRecoImage{
+	background:url(../images/accRecoImage-450x600.png) no-repeat; 
+	background-position: center center;
+	background-size: cover;
+	width: 300px;
+	flex:0 0 25%;
+	-ms-flex:0 0 25%;
+}
+.accRecoContent{
+	flex-grow:4;
+	-ms-flex-grow:4;
+}
+.accRecoBigBox{
+	display: box;              /* OLD - Android 4.4- */
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.accRecoBox{
+	margin: 0 10px;
+	padding: 5px;
+	border:#ddd solid 1px;
+	font-size: 16px;
+	line-height: 26px;
+	-webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;         /* OLD - Firefox 19- */
+    width: 20%;               /* For old syntax, otherwise collapses. */
+    -webkit-flex: 1;          /* Chrome */
+    -ms-flex: 1;              /* IE 10 */
+    flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.recommendSale{
+	color: #FF3C00;
+	font-size: 22px;
+	font-weight: 600;
+}
+.accRecoContent h3{
+	font-size: 22px;
+	color: #fff;
+	background: #000;
+	padding: 10px 60px;
+	display: inline-block;
+	margin-top: 0px;
+}
+.recoProductBanner{
+	margin-top: 40px;
+}
+.recoProductBanner:after{
+	content: "";
+	clear: both;
+}
+.recoProductBanner div{
+	margin-top: 20px;
+}
+.accRecoBox a{
+	color: #000;
+	text-decoration: none;
+}
+.joinQuelea{
+	background: url(../images/join-quelea-bg.jpg) no-repeat;
+	background-position: center  bottom ;
+	background-size: cover;
+	position: relative;
+	height: 400px;
+	margin-top: 60px;
+}
+.joinQueleaBox{
+	position: absolute;
+	left:50%;
+	color: #fff;
+	max-width: 480px;
+	padding:60px 0;
+}
+.joinQueleaBox > p{
+	font-size: 16px;
+	line-height: 26px;
+	margin-bottom: 30px;
+}
+.queleafooter{
+	background: #e8e8e8;	
+}
+.footerBottom{
+	padding: 10px 0;
+	background: #FEC844;
+	color: #000;
+	overflow: visible;
+}
+.footerBottom p{
+	text-align: center;
+	margin-bottom: 0px;
+}
+.queleafooter .container{
+	padding:50px 0;
+}
+.footerItem{
+	display: inline-block;
+	vertical-align: top;
+	margin:15px 60px 15px 15px;
+	box-sizing: border-box;
+}
+.footerItem img{
+	max-width: 150px;
+	display: inline-block;
+}
+.footerItem ul{
+	list-style: none;
+	margin: 0;
+  	padding: 0;
+  	font-size: 14px;
+  	line-height: 28px;
+  	color: #000;
+}
+.footerItem ul li a{
+	text-decoration: none;
+	color: #000;
+}
+.footerItem h4{
+	padding-bottom: 10px;
+	color: #000;
+	border-bottom:#FEC844 solid 3px; 
+	display: inline-block;
+}
+.socialIcon li{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.socialIcon li i{
+	font-size: 30px;	
+}
+
+/*麵包屑*/
+.queleaBreadcrumbs{
+	font-size: 13px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.queleaBreadcrumb:first-child::before {
+    content: " ";
+    margin: 0;
+}
+.queleaBreadcrumb::before {
+    color: #989898;
+    content: "/";
+    margin-right: 8px;
+    top: 1px;
+}
+.queleaBreadcrumb a{
+	color: #545454;
+	text-decoration: none;
+}
+.queleaBreadcrumb a:hover{
+	color: #000;
+	text-decoration: none;
+}
+/*產品總覽列表*/
+.allProductTitle{
+	text-align: center;
+	padding: 10px 0;
+}
+.allProductTitle h3{
+	padding-bottom: 10px;
+	display: inline-block;
+	color: #333;
+	border-bottom: #00add8 solid 3px;
+	letter-spacing: 5px;
+	margin-left: 0px;
+}
+.allProductList{
+	
+	display: box;              /* OLD - Android 4.4- */
+
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	justify-content:flex-start;
+	
+	 /* 09版 */
+    /*-webkit-box-lines: multiple;*/
+    /* 12版 */
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+	-moz-max-width: 100%;
+	-ms-max-width: 100%;
+	max-width: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	
+}
+.queleaProductBox{
+	border-radius: 4px;
+    border: solid 1px #d4d9de;
+    box-shadow: 0 1px 4px rgba(82,86,91,0.2);
+    background: #fff;
+    margin-left:1.6%;
+    margin-bottom: 20px;
+    padding: 15px 15px;
+    flex: 0 0 23%;
+    max-width: 23%; 
+}
+.queleaProductBox div h3{
+	margin-left: 0px;
+}
+.queleaProductBox div h3 a{
+	color: #000;
+	text-decoration: none;
+}
+.queleaProductBox div > p{
+	color: #555;
+}
+.queleaProductBox div .throughWord{
+	color: #620404;
+}
+.queleaProductBox div p span{
+	color: #E80000;
+	font-size: 22px;
+	font-weight: 600;
+}
+.queleaProductBox div div{	
+text-align: center;
+}
+
+/*產品詳情頁*/
+.queleaProIntroduceOuter{
+	background: #fff;
+	margin-bottom: 	60px;
+}
+.queleaProIntroduceOuter::after{
+	content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.queleaProductTop{
+	border-bottom: #ddd 1px solid;
+}
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.pdtboximg-big {
+    max-width: 600px;
+}
+.slider__item {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.pdtNamePrice h3 {
+    color: #333;
+    line-height: 24px;
+    margin-left: 0px;
+}
+.pdtNamePrice p{
+	font-size: 16px;
+	line-height: 26px;
+}
+.pdt-button {
+    clear: both;
+    margin: 30px 0;
+}
+.pdtboximg-small {
+    margin: 20px 0 40px 0px;
+}
+
+.pdtboximg-small img {
+    border: #CCC 1px solid;
+    max-width: 70px;
+    margin-right: 8px;
+}
+.slider__switch--next {
+    right: 0px;
+}
+.slider__switch {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    padding: 10px 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+.slider__switch span {
+    color: #999;
+    display: block;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+}
+.pdt-button a{
+	display: inline-block;
+	padding: 10px 20px;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 5px;
+	margin-right: 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.pdt-button a i{
+	margin-left: 5px;
+}
+.buyNow{
+	background: linear-gradient(to bottom, #ec3863 72%, #da2953 100%);
+}
+.addToShopCart{
+	background: linear-gradient(to bottom, #247ec4 72%, #0f6bb2 100%);
+}
+.buyNow:hover{
+	text-decoration: none;
+	background: linear-gradient(to bottom, #f0587d 72%, #da2953 100%);
+}
+.addToShopCart:hover{
+	text-decoration: none;
+	background: linear-gradient(to bottom, #388fd2 72%, #0f6bb2 100%);
+}
+.buyNow p , .addToShopCart p{
+	margin-bottom: 0px;
+}
+.queleaProductTop::after{
+	content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+} 
+/*影片區*/
+.pdtVideoBox {
+    padding: 20px 0;
+    border-bottom: #ddd 1px solid;
+    text-align: center;
+}
+.pdtContainer {
+	text-align: center;
+}
+.pdtVideo {
+    margin: 20px 2%;
+    width: 45%;
+    max-width: 500px;
+    display: inline-block;
+}
+
+/*快速選擇區塊*/
+.pdtBar {
+	border-top: #00add8 1px solid;
+    border-bottom: #00add8 4px solid;
+    padding: 10px 0;
+    background: #333;
+    font-size: 14px;
+}
+
+.pdtBar li{
+    display: inline-block;
+    padding: 0 10px;
+    border-left: #666 1px solid;
+}
+.pdtBar li a {
+    text-decoration: none;
+    color: #fff;
+}
+.pdtBar::after{
+	content: "";
+	display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+/*產品詳情*/
+.pdtBox {
+	width: 100%;
+	margin: 30px auto;
+}
+.pdtDes {
+    margin: 0 auto;
+    width: 100%;
+    font-size: 16px;
+    line-height: 26px;
+}
+.pdtDes img {
+    display: block;
+    max-width: 1000px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.pdtSpec table tbody tr th{
+	padding: 15px 0;
+	background: #f7f7f7;
+    color: #333;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: middle;
+}
+.pdtSpec table tbody tr p{
+	margin-bottom: 0;
+}
+.pdtSpec table tbody tr td {
+    padding: 15px 30px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 1.7;
+}
+.pdtSpec table {
+    border: 1px solid #c6c6c6;
+}
+.pdtReminder{
+	margin: 0 auto;
+    width: 100%;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/*推薦商品*/
+.queleaOtherPdt{
+	background: #f3f3f3;
+	padding-top: 	40px;
+	padding-bottom: 100px;
+	
+}
+.queleaOtherPdt h3{
+	text-align: center;
+	padding-top: 40px;
+	color: #00add8 ;
+}
+.otherPdtBox{
+	display: box;              /* OLD - Android 4.4- */
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */	
+	-webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+	justify-content: space-around ;
+}
+.otherPdt{
+	flex:0 0 22%;
+	-ms-flex:0 0 22%;
+	max-width: 22%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	position: relative;
+	padding-bottom: 80px;
+}
+.otherPdtNameBox{
+	position: absolute;
+	bottom: 0;
+	background: rgba(102, 109, 123 , 0.8);
+	width: 100%;
+	padding: 20px 20px;
+	color: #fff;
+	text-align: 	center;
+}
+.otherPdtNameBox a p{
+	margin-bottom: 	0;
+}
+.otherPdtNameBox a{
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 5px;
+	text-decoration: 	none;
+	color: #373f4d;
+	background: rgba(255,255, 255 , 0.8);
+}
+.otherPdtNameBox a:hover{
+	background: rgba(255,255, 255 , 0.5);
+}
+/*返回上方*/
+#toTopHover {
+    width: 45px;
+    height: 45px;
+    display: block;
+    overflow: hidden;
+    float: right;
+    opacity: 0;
+}
+
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    overflow: hidden;
+    width: 45px;
+    height: 45px;
+    border: none;
+    text-indent: 100%;
+    background: url(../images/backtotop.png) no-repeat right top;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+  .topImgBanner-1920{
+    display: none;
+  }
+  .topImgBanner-1024{
+    display: block;
+  }
+  .joinQueleaBox{
+	position: relative;
+	left:0%;
+	margin: 0 auto;
+	color: #fff;
+	max-width: 480px;
+	padding:40px 15px;
+}
+}
+
+
+@media only screen and (max-width: 992px) {
+	.footerItem:nth-child(1){
+		
+		display: block;
+	}
+	.queleafooter .container{
+	padding:0 0 40px 0; 
+	}
+	.queleaProductBox{
+    margin-left:2%;
+    flex: 0 0 30%;
+    max-width: 30%; 
+}
+.otherPdt{
+	flex:0 0 45%;
+	-ms-flex:0 0 45%;
+	max-width: 45%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+}
+@media only screen and (max-width: 767px) {
+.indBestPro-bike{
+	background: url(../images/indBestPro-bike-bg.png) no-repeat;
+	background-position: 0% 0%;
+	background-size: 250% ;
+}
+.indBestPro-trea{
+	background: url(../images/indBestPro-trea-bg.png) no-repeat;
+	background-position: 100% 0%;
+	background-size: 250%;
+}
+.indBestPro-trea .container,.indBestPro-bike .container{
+	max-width: 480px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.indBestContentRight{
+	position: relative;
+	top:0;
+	left: 0;
+}
+.indBestContentLeft{
+	position: relative;
+	top:0;
+	left: 0;
+}
+.accRecoImage{
+	display: none;
+}
+.accRecoBigBox::before{
+	content: " ";
+	display: block;
+	background:url(../images/accRecoImage-450x600.png) no-repeat; 
+	background-position: center center;
+	background-size: cover;
+	width:300px;
+	margin: 2% 2%; 
+	flex: 0 0 46%; 
+	-ms-flex: 0 0 46%; 
+	max-width: 46%;
+}
+.accRecoBigBox{
+	/* 09版 */
+    /*-webkit-box-lines: multiple;*/
+    /* 12版 */
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+	justify-content: space-between ;
+}
+.accRecoBox{
+	flex: 0 0 46%; 
+	-ms-flex: 0 0 46%;
+	margin: 2% 2%;
+	max-width: 46%;
+}
+.accRecoContent h3{
+	font-size: 22px;
+	color: #fff;
+	background: #000;
+	text-align: center;
+	padding: 10PX 0;
+	display: block;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.queleafooter .container{
+	padding:30px 15px;
+	}
+.footerItem:nth-child(4){
+	
+	display: block;
+	}
+	.footerItem{
+	display: inline-block;
+	vertical-align: top;
+	margin:15px 15px 15px 30px;
+	box-sizing: border-box;
+}
+	.queleaProductBox{
+    margin-left:2%;
+    flex: 0 0 45%;
+    max-width: 45%; 
+}
+.pdtVideo {
+    margin: 20px 2%;
+    width: 98%;
+    max-width: 500px;
+    display: inline-block;
+}
+.queleaOtherPdt{
+	padding-top: 	0px;
+	padding-bottom:  60px;
+	
+}
+}
+
+
+@media only screen and (max-width: 480px) {
+.footerItem img{
+	max-width: 100px;
+	display: inline-block;
+}
+.recoProductBanner div{
+	padding-right: 6px;
+    padding-left: 6px;
+}
+.halfTheLi{
+	display: inline-block;
+	vertical-align: bottom;
+	margin-right:20px;
+}
+
+}
+
+
+
+@media only screen and (max-width: 479px) {
+
+}
