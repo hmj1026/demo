@@ -23,7 +23,7 @@ abstract class TestCase extends BaseTestCase
         $this->artisan('migrate:reset');
     }
 
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         $_ENV['DB_CONNECTION'] = 'sqlite_testing';
     }
