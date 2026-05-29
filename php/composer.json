@@ -8,23 +8,23 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^8.1",
+        "php": "^8.2",
         "ckeditor/ckeditor": "^4.13",
         "jeroennoten/laravel-adminlte": "^3.0",
-        "laravel/framework": "^10.0",
+        "laravel/framework": "^11.0",
         "laravel/legacy-factories": "^1.0",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^4.0",
         "unisharp/laravel-filemanager": "^2.0",
-        "yajra/laravel-datatables-oracle": "^10.0"
+        "yajra/laravel-datatables-oracle": "^11.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.2",
         "fakerphp/faker": "^1.9.1",
         "filp/whoops": "^2.0",
         "mockery/mockery": "^1.0",
-        "nunomaduro/collision": "^7.0",
-        "phpunit/phpunit": "^10.0"
+        "nunomaduro/collision": "^8.0",
+        "phpunit/phpunit": "^10.5"
     },
     "config": {
         "optimize-autoloader": true,
