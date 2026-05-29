@@ -33,7 +33,7 @@ class AdminPanelTest extends TestCase
         $this->get($uri)->assertRedirect('/admin/login');
     }
 
-    public function guardedPages()
+    public static function guardedPages()
     {
         return [
             'dashboard' => ['/admin'],
@@ -56,7 +56,7 @@ class AdminPanelTest extends TestCase
             ->assertViewIs($view);
     }
 
-    public function listPages()
+    public static function listPages()
     {
         return [
             'dashboard'     => ['/admin', 'admin.dashboard'],

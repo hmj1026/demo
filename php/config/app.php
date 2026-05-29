@@ -169,7 +169,6 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         Yajra\DataTables\DataTablesServiceProvider::class,
         UniSharp\LaravelFilemanager\LaravelFilemanagerServiceProvider::class,
-        Intervention\Image\ImageServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -232,7 +231,6 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
-        'Image' => Intervention\Image\Facades\Image::class,
     ],
 
 ];

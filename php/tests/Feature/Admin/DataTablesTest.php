@@ -36,7 +36,7 @@ class DataTablesTest extends TestCase
         $this->assertArrayHasKey('data', $response->decodeResponseJson());
     }
 
-    public function dataTableEndpoints()
+    public static function dataTableEndpoints()
     {
         return [
             'products' => ['/admin/products/getProductsData'],
