@@ -5,6 +5,7 @@ namespace Tests\Feature\Admin;
 use Tests\TestCase;
 use Tests\Concerns\SeedsRbac;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use PHPUnit\Framework\Attributes\DataProvider;
 use App\Models\Admin;
 
 /**
@@ -27,7 +28,7 @@ class AdminPanelTest extends TestCase
         return factory(Admin::class)->state('ROOT')->create();
     }
 
-    /** @dataProvider guardedPages */
+    #[DataProvider('guardedPages')]
     public function test_guest_is_redirected_to_login($uri)
     {
         $this->get($uri)->assertRedirect('/admin/login');
@@ -45,7 +46,7 @@ class AdminPanelTest extends TestCase
         ];
     }
 
-    /** @dataProvider listPages */
+    #[DataProvider('listPages')]
     public function test_root_admin_can_load_page($uri, $view)
     {
         $this->seedRbac();

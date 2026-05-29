@@ -4,6 +4,7 @@ namespace Tests\Feature\Admin;
 
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use PHPUnit\Framework\Attributes\DataProvider;
 use App\Http\Middleware\VerifyCsrfToken;
 use App\Models\Admin;
 
@@ -25,7 +26,7 @@ class DataTablesTest extends TestCase
         return factory(Admin::class)->state('ROOT')->create();
     }
 
-    /** @dataProvider dataTableEndpoints */
+    #[DataProvider('dataTableEndpoints')]
     public function test_endpoint_returns_datatables_json($uri)
     {
         $this->withoutMiddleware(VerifyCsrfToken::class);
