@@ -14,8 +14,8 @@ trait SeedsRbac
 {
     protected function seedRbac()
     {
-        $this->artisan('db:seed', ['--class' => 'RolesTableSeeder']);
-        $this->artisan('db:seed', ['--class' => 'PermissionsTableSeeder']);
-        $this->artisan('db:seed', ['--class' => 'RolesHasPermissionsTableSeeder']);
+        $this->artisan('db:seed', ['--class' => \Database\Seeders\RolesTableSeeder::class]);
+        $this->artisan('db:seed', ['--class' => \Database\Seeders\PermissionsTableSeeder::class]);
+        $this->artisan('db:seed', ['--class' => \Database\Seeders\RolesHasPermissionsTableSeeder::class]);
     }
 }
