@@ -3,6 +3,7 @@
 namespace Tests\Feature\Admin;
 
 use Tests\TestCase;
+use Tests\Concerns\SeedsRbac;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use PHPUnit\Framework\Attributes\DataProvider;
 use App\Http\Middleware\VerifyCsrfToken;
@@ -20,6 +21,7 @@ use App\Models\Admin;
 class DataTablesTest extends TestCase
 {
     use RefreshDatabase;
+    use SeedsRbac;
 
     private function root()
     {
@@ -30,6 +32,7 @@ class DataTablesTest extends TestCase
     public function test_endpoint_returns_datatables_json($uri)
     {
         $this->withoutMiddleware(VerifyCsrfToken::class);
+        $this->seedRbac();
 
         $response = $this->actingAs($this->root(), 'admin')->post($uri);
 
