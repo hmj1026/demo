@@ -163,14 +163,3 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function() {
         
     });
 });
-
-// Route::get('/test', 'TestController@index');
-// Route::middleware([
-//     'web',
-//     'auth:admin',
-//     '\UniSharp\LaravelFilemanager\Middlewares\MultiUser',
-//     '\UniSharp\LaravelFilemanager\Middlewares\CreateDefaultFolder'
-//     ])->any('laravel-filemanager/upload', ['uses' => 'TestController@upload'])->name('unisharp.lfm.upload');
-// Route::any('laravel-filemanager/upload', ['uses' => 'TestController@upload']);
-// Route::get('/equip/{equip}', 'TestController@testRoute')->name('home');
-// Route::get('/equip/{user}/user', 'TestController@testUser')->name('user');

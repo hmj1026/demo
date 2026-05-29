@@ -2,7 +2,6 @@
 
 namespace App\Filters;
 
-use JeroenNoten\LaravelAdminLte\Menu\Builder;
 use JeroenNoten\LaravelAdminLte\Menu\Filters\FilterInterface;
 use Auth;
 use App\Models\Role;
@@ -11,7 +10,7 @@ class AdminMenuFilter implements FilterInterface
 {
     private $permissions;
 
-    public function transform($item, Builder $builder)
+    public function transform($item)
     {
         $roleId = Auth::guard('admin')->user()->role->id;
 

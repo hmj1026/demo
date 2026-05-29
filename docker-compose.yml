@@ -5,7 +5,7 @@ services:
   php:
     build:
       context: ./
-      dockerfile: dockerfile/php/7.2/Dockerfile
+      dockerfile: dockerfile/php/8.3/Dockerfile
     restart: always
     env_file:
       - ./.env
