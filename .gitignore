@@ -2,6 +2,46 @@
 openspec/
 AGENTS.md
 
+# Local environment and tool state
+.env
+.env.*
+!.env.example
+.claude/
+.hyperweave/
+
+# PHP and Node dependencies
+/php/vendor/
+/php/node_modules/
+
+# Laravel runtime files and user uploads
+/php/bootstrap/cache/*
+/php/storage/framework/cache/data/*
+/php/storage/framework/sessions/*
+/php/storage/framework/testing/*
+/php/storage/framework/views/*
+/php/storage/logs/*
+/php/storage/debugbar/*
+/php/storage/files/*
+/php/storage/images/*
+/php/public/hot
+/php/public/storage
+
+# Docker volumes and local server logs/certificates
+/db/data/*
+/db/dump/*
+/web/log/*
+/web/ssl/*
+
+# Test and build caches
+/.cache/
+/coverage/
+php/.phpunit.result.cache
+php/.phpunit.cache/
+php/npm-debug.log*
+php/yarn-debug.log*
+php/yarn-error.log*
+php/.sass-cache/
+
 # OS generated files
 .DS_Store
 Thumbs.db
